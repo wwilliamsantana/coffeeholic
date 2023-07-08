@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="max-w-7xl  mx-9 w-full flex items-center justify-between gap-4">
-      <div className="flex items-center justify-center gap-2">
+    <header className=" mx-9 w-11/12 flex items-center justify-between gap-4 ">
+      <div className="flex items-center justify-center gap-2 ">
         <Image src={logo} alt="" className="w-12 h-12" />
         <h1 className="font-caveatFont text-4xl text-white">Coffeeholic</h1>
       </div>
