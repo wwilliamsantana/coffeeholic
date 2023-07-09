@@ -4,6 +4,8 @@ import {
   Roboto_Flex as RobotoFlex,
   Caveat_Brush as caveatBrush,
 } from 'next/font/google'
+import { Header } from './components/Header'
+import { Sidebar } from './components/Sidebar'
 
 const roboto = RobotoFlex({
   subsets: ['latin'],
@@ -26,7 +28,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${caveat.variable} bg-zinc-900 font-sans`}
       >
-        {children}
+        <Sidebar />
+
+        <div className="ml-72 relative h-screen">
+          <Header />
+          <div className="py-32 px-4 max-w-4xl ">{children}</div>
+        </div>
       </body>
     </html>
   )

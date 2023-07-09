@@ -1,4 +1,3 @@
-import logo from '../../../public/logo.svg'
 import avatar from '../../../public/avatar1.png'
 import Image from 'next/image'
 import { ChevronDown, Search, Heart, ShoppingCart, Bell } from 'lucide-react'
@@ -6,12 +5,7 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className=" mx-9 w-11/12 flex items-center justify-between gap-4 ">
-      <div className="flex items-center justify-center gap-2 ">
-        <Image src={logo} alt="" className="w-12 h-12" />
-        <h1 className="font-caveatFont text-4xl text-white">Coffeeholic</h1>
-      </div>
-
+    <header className="fixed left-60 top-4 px-9 flex items-center justify-between gap-4 right-0">
       <div className="flex items-center justify-between bg-zinc-800 rounded-2xl px-3 py-2 gap-2 flex-1 mx-3">
         <div className="bg-zinc-700 rounded-xl px-2 py-[3px] text-zinc-200 flex gap-[6px] items-center">
           <p className="text-sm">All categories</p>

@@ -9,12 +9,15 @@ import {
   User,
 } from 'lucide-react'
 import Link from 'next/link'
+import { Logo } from './Logo'
 
 export function Sidebar() {
   return (
-    <aside className="h-full max-w-64 mx-9 ">
-      <main>
-        <h1 className="font-bold text-3xl tracking-widest mt-16 text-zinc-100">
+    <aside className="w-60 mx-9 fixed top-4 left-0 ">
+      <div>
+        <Logo />
+
+        <h1 className="font-bold text-3xl tracking-widest  text-zinc-100 mt-16">
           Explore
         </h1>
 
@@ -44,14 +47,14 @@ export function Sidebar() {
             <span className="font-bold text-lg ">Blog</span>
           </Link>
         </div>
-      </main>
+      </div>
 
-      <footer className="flex flex-col gap-4 text-zinc-300 p-10 border-t border-zinc-700 absolute bottom-0">
+      <footer className=" text-zinc-300 border-t border-zinc-700 inline-block mt-60 w-full p-10">
         <Link href={'/'} className="flex items-center gap-3 ">
           <User size={32} />
           <span className="font-bold text-lg ">Conta</span>
         </Link>
-        <Link href={'/'} className="flex items-center gap-3 ">
+        <Link href={'/'} className="flex items-center gap-3 mt-4">
           <Settings size={32} />
           <span className="font-bold text-lg ">Configurações</span>
         </Link>
