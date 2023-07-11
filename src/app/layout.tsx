@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <div className="ml-72 relative h-screen">
           <Header />
-          <div className="py-32 px-4 max-w-4xl ">{children}</div>
+          <div className="py-32 px-4 w-full">{children}</div>
         </div>
       </body>
     </html>
