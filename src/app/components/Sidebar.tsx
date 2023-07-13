@@ -6,9 +6,9 @@ import {
   Truck,
   User,
 } from 'lucide-react'
-import Link from 'next/link'
 import { Logo } from './Logo'
 import { DropCategories } from './DropCategories'
+import { LinkComponent } from './LinkComponent'
 
 export function Sidebar() {
   return (
@@ -23,52 +23,32 @@ export function Sidebar() {
         <DropCategories />
 
         <div className="flex flex-col gap-6 mt-12 text-zinc-300/70  ">
-          <Link
-            href={'/'}
-            className="flex items-center gap-3 hover:text-zinc-300"
-          >
+          <LinkComponent title="Mais vendidos" href="/">
             <CircleDollarSign size={32} />
-            <span className="font-bold text-lg ">Mais vendidos</span>
-          </Link>
-          <Link
-            href={'/'}
-            className="flex items-center gap-3 hover:text-zinc-300"
-          >
+          </LinkComponent>
+
+          <LinkComponent title="Venda conosco" href="/">
             <Store size={32} />
-            <span className="font-bold text-lg ">Venda conosco</span>
-          </Link>
-          <Link
-            href={'/'}
-            className="flex items-center gap-3 hover:text-zinc-300"
-          >
+          </LinkComponent>
+
+          <LinkComponent title="Acompanhar pedido" href="/">
             <Truck size={32} />
-            <span className="font-bold text-lg ">Acompanhar pedido</span>
-          </Link>
-          <Link
-            href={'/'}
-            className="flex items-center gap-3 hover:text-zinc-300"
-          >
+          </LinkComponent>
+
+          <LinkComponent title="Blog" href="/">
             <PanelTop size={32} />
-            <span className="font-bold text-lg ">Blog</span>
-          </Link>
+          </LinkComponent>
         </div>
       </div>
 
       <footer className=" text-zinc-300/70 border-t border-zinc-700 inline-block mt-60 w-full p-10">
-        <Link
-          href={'/'}
-          className="flex items-center gap-3 hover:text-zinc-300 "
-        >
+        <LinkComponent title="Conta" href="/">
           <User size={32} />
-          <span className="font-bold text-lg ">Conta</span>
-        </Link>
-        <Link
-          href={'/'}
-          className="flex items-center gap-3 mt-4 hover:text-zinc-300"
-        >
+        </LinkComponent>
+
+        <LinkComponent title="Configurações" href="/" propsClass="mt-4">
           <Settings size={32} />
-          <span className="font-bold text-lg ">Configurações</span>
-        </Link>
+        </LinkComponent>
       </footer>
     </aside>
   )

@@ -5,11 +5,15 @@ import 'keen-slider/keen-slider.min.css'
 
 import { CardCoffee } from './CardCoffee'
 import image1 from '../../assets/coffees/Image.svg'
+import image2 from '../../assets/coffees/Image-1.svg'
+import image3 from '../../assets/coffees/Image-2.svg'
+import image4 from '../../assets/coffees/Image-3.svg'
 
 export function CarouselCoffee() {
   const [sliderRef] = useKeenSlider({
     loop: false,
     rtl: false,
+    mode: 'free',
     slides: {
       spacing: 8,
       perView: 4,
@@ -55,25 +59,19 @@ export function CarouselCoffee() {
         name="Expresso Americano"
         price={12.9}
         types={['tradicional']}
-        image={image1}
+        image={image2}
       />
       <CardCoffee
-        name="Cubano"
+        name="Expresso Cremoso"
         price={12.9}
-        types={['tradicional', 'com leite']}
-        image={image1}
+        types={['tradicional']}
+        image={image3}
       />
       <CardCoffee
-        name="Macchiato"
+        name="Expresso Gelado"
         price={12.9}
-        types={['tradicional', 'Especial']}
-        image={image1}
-      />
-      <CardCoffee
-        name="Expresso forte"
-        price={12.9}
-        types={['tradicional', 'Alcoólico']}
-        image={image1}
+        types={['tradicional', 'Gelado']}
+        image={image4}
       />
     </div>
   )

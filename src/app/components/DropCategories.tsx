@@ -5,14 +5,6 @@ import { ChevronRight, Grip } from 'lucide-react'
 
 export function DropCategories() {
   return (
-    // <div className="px-4 py-2 rounded-lg bg-red-800 mt-12 flex items-center gap-8 cursor-pointer text-zinc-300">
-    //       <div className="flex gap-3 items-center">
-    //         <Grip size={32} className="bg-zinc-700 rounded-md  p-1" />
-    //         <span className=" font-bold text-xl">Categorias</span>
-    //       </div>
-    //       <ChevronRight size={20} />
-    //     </div>
-
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
         <button className="px-3 py-2 rounded-lg  bg-gradient-to-r from-red-800 mt-12 flex items-center gap-8 cursor-pointer text-zinc-300 outline-none">

@@ -24,7 +24,7 @@ export function Headline() {
           </div>
         </div>
       </div>
-      <div className="w-72 h-80  rounded-xl bg-[url('../../public/radiallineresize.png')] bg-cover bg-center bg-zinc-800 bg-no-repeat grid items-center">
+      <div className="xl:grid hidden  w-72 h-80  rounded-xl bg-[url('../../public/radiallineresize.png')] bg-cover bg-center bg-zinc-800 bg-no-repeat  items-center">
         <Image src={blackFriday} alt="" className="w-full" />
       </div>
     </div>
