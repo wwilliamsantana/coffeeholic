@@ -3,7 +3,7 @@
 import { ChevronDown } from 'lucide-react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
-export function SelectCategory() {
+export function DropCategory() {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>

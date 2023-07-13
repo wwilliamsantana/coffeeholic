@@ -14,6 +14,33 @@ export function CarouselCoffee() {
       spacing: 8,
       perView: 4,
     },
+    breakpoints: {
+      '(max-width:800px)': {
+        slides: {
+          perView: 1,
+        },
+      },
+      '(min-width:800px)': {
+        slides: {
+          perView: 2,
+        },
+      },
+      '(min-width:1100px)': {
+        slides: {
+          perView: 3,
+        },
+      },
+      '(min-width:1440px)': {
+        slides: {
+          perView: 4,
+        },
+      },
+      '(min-width:1750px)': {
+        slides: {
+          perView: 6,
+        },
+      },
+    },
   })
 
   return (

@@ -2,13 +2,13 @@ import avatar from '../../../public/avatar1.png'
 import Image from 'next/image'
 import { Search, Heart, ShoppingCart, Bell } from 'lucide-react'
 import Link from 'next/link'
-import { SelectCategory } from './SelectCategory'
+import { DropCategory } from './DropCategory'
 
 export function Header() {
   return (
     <header className="fixed left-60 top-4 px-9 flex items-center justify-between gap-4 right-0">
       <div className="flex items-center justify-between bg-zinc-800 rounded-2xl px-3 py-2 gap-2 flex-1 mx-3">
-        <SelectCategory />
+        <DropCategory />
         <input
           type="text"
           className="bg-transparent text-zinc-100 placeholder:text-zinc-400 rounded flex-1 outline-none"
